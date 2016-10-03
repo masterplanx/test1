@@ -23,9 +23,9 @@ if [ ! -f /usr/bin/salt-minion ]; then
 
         if [ ! -f /vagrant/vagrant/install_salt.sh ]; then
                 curl -L http://bootstrap.saltstack.org -o install_salt.sh
-                sh install_salt.sh -U git v2014.7.0rc7
+                sh install_salt.sh -U git v2014.8.12
         else
-                sh /vagrant/vagrant/install_salt.sh -U git v2014.7.0rc7
+                sh /vagrant/vagrant/install_salt.sh -U git v2015.8.12
         fi
 fi
 
