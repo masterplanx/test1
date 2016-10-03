@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |baseconfig|
     end
 
     config.vm.box = "bento/ubuntu-14.04"
-    config.vm.network "forwarded_port", guest: 80, host: 6080
+    config.vm.network "forwarded_port", guest: 80, host: 16080
     config.vm.hostname = project
 
     #Use local file_roots for salt for developing purposes
