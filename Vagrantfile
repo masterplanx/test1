@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-project = "hyperleap"
+project = "testing"
 
 VAGRANTFILE_API_VERSION = "2"
 
@@ -14,8 +14,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |baseconfig|
       v.customize ["modifyvm", :id, "--cpus", 2]
     end
 
-    config.vm.box = "bento/ubuntu-14.04"
-    config.vm.network "forwarded_port", guest: 80, host: 4580
+    config.vm.box = "ubuntu/trusty64"
+#    config.vm.network "forwarded_port", guest: 80, host: 4580
     config.vm.hostname = project
 
     #Use local file_roots for salt for developing purposes
